@@ -118,9 +118,14 @@ header > #points {
 }
 
 main {
+  padding: 3rem 1rem;
   background: var(--gray-bg);
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+a.active {
+  color: black !important
 }
