@@ -130,3 +130,22 @@ main {
 a.active {
   color: black !important
 }
+
+.main-container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.main-header {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;  
+}

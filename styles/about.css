@@ -1,0 +1,11 @@
+.members-list {
+  list-style: none;
+}
+
+.members-list li {
+  padding: 1rem ;
+}
+
+.members-list li + li {
+  border-top: 1px solid var(--green);
+}
