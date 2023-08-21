@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title>Profile | Challenge Schneider</title>
+
+</head>
+<body>
+    <div id="header-container">
+        <header>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo Schneider Electric">
+            </a>
+            <form class="search">
+                <button type="button">
+                    <img src="img/magnifying-glass.svg" alt="">
+                </button>
+                <input type="search" name="search" id="search" placeholder="Search">
+            </form>
+            <div id="points">
+                <img src="img/star.svg" alt="">
+                <span>0 Points</span>
+            </div>
+        </header>
+    </div>
+    <div class="content-container">
+        <aside>
+            <ul>
+            <li><a href="index.html"><img src="img/house.svg" alt=""> Home</a></li>
+            <li><a href="blog.html"><img src="img/compass.svg" alt=""> Blog</a></li>
+            <li><a href="profile.html" class="active"><img src="img/bell.svg" alt=""> Profile</a></li>
+            <li><a href=""><img src="img/ranking.svg" alt=""> Ranking</a></li>
+            <li><a href="https://www.youtube.com/watch?v=DKQeVSvu9RQ&ab_channel=AndreChamis" target="_blank">Video Pitch</a></li>
+            <li><a href="about.html">Sobre o projeto</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="profile-container">
+                <div class="profile-posts">
+                    <div class="profile-header">
+                        <h1>My posts</h1>
+                    </div>
+                    <div class="main-body">
+                        <div class="card-post">
+                            <div class="card-header">
+                              <h3>August 15, 2023</h3>
+                              <button onclick="toggleCardClosed(this.parentElement.parentElement)"><img src="img/caret-down.svg" alt=""></button>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, temporibus! Nemo, accusamus omnis rem quam voluptatum aliquid repudiandae. Quibusdam a distinctio maxime dignissimos odio deleniti deserunt aperiam vero officia beatae.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-post">
+                            <div class="card-header">
+                              <h3>August 3, 2023</h3>
+                              <button onclick="toggleCardClosed(this.parentElement.parentElement)"><img src="img/caret-down.svg" alt=""></button>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, temporibus! Nemo, accusamus omnis rem quam voluptatum aliquid repudiandae. Quibusdam a distinctio maxime dignissimos odio deleniti deserunt aperiam vero officia beatae.
+                                </p>
+                                <div class="img-post">
+                                    <img src="img/videopost.png" alt="Thumbnail de vídeo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <img src="img/fotodeperfil.png" alt="foto de perfil">
+                    <h2 class="info-title">Carlos Muniz</h2>
+                    <h5 class="info-description">Better than you. CEO.</h5>
+                    <div class="info-points">
+                        <img src="img/star.svg" alt="">
+                        <h3>0 Points</h3>
+                    </div>
+                    <div class="info-stats">
+                        <img src="img/followers.svg" alt="">
+                        <div class="info-stats-text">
+                            <h3>Followers</h3>
+                            <p>2.1 millions</p>
+                        </div>
+                    </div>
+                    <div class="info-stats">
+                        <img src="img/like.svg" alt="">
+                        <div class="info-stats-text">
+                            <h3>Likes</h3>
+                            <p>68.7 millions</p>
+                        </div>
+                    </div>
+                    <div class="info-stats">
+                        <img src="img/cameraposts.svg" alt="">
+                        <div class="info-stats-text">
+                            <h3>Posts</h3>
+                            <p>107</p>
+                        </div>
+                    </div>
+                    <h5 class="info-edit">Edit profile</h5>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/blog.js"></script>
+</body>
+</html>
