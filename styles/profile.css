@@ -1,0 +1,129 @@
+main {
+    padding: 60px 20px;
+}
+.main-body {
+    gap: 0;  
+  }
+
+.profile-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+}
+
+.profile-posts {
+    background-color: var(--green);
+    width: 100%;
+}
+
+.profile-info {
+    width: 240px;
+    background-color: white;
+    padding: 20px;
+}
+
+.profile-header {
+    color: white;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.card-post {
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: inherit;
+    height: fit-content;
+    margin: 20px 60px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-header button {
+    background: transparent;
+    line-height: 0;
+    border-color: transparent;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .card-header button:hover {
+    background: var(--gray-bg);
+  }
+  
+  .card-body {
+    margin-top: 1rem;
+    max-height: 500px;
+    transition: max-height 0.5s, opacity 0.2s;
+  }
+  
+  .card-post.closed .card-body{
+    overflow: hidden;
+  
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .info-stats {
+    display: flex;
+  }
+
+  .info-title {
+    text-align: center;
+  }
+
+  .info-description {
+    text-align: center;
+    font-weight:300;
+    color: #00000080;
+  }
+
+  .info-points {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+
+  .info-points h3 {
+    padding-left: 10px;
+    font-weight: 500;
+  }
+
+  .info-stats {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .info-stats-text {
+    padding-left: 10px;
+    font-weight: 400;
+  }
+
+  .info-stats-text p {
+    font-weight:300;
+    color: #00000080;
+  }
+
+  .info-edit {
+    align-self: flex-end;
+    text-align: center;
+    color: #00000080;
+  }
+
+  .img-post {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
